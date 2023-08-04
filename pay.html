@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>EcoNation </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/2a13f5faa9.js" crossorigin="anonymous"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+<nav>
+
+      <section id="header"><a href="#"><img src="img/1.png" alt="" class="logo" width="100 " height="80"></a>
+        <div>
+      <ul class="menu" id="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a  href="product.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a  href="register.html">Register</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+          <a href="#" id="close"><i far fa-times></i></a>
+      </ul>
+      </div>
+      <div id="mobile">
+        <a href=""><i class="fas fa-shopping-cart"></i></a>
+        <i id="bar" class="fa-solid fa-bars" onclick="bartoggle()"></i>
+      </div>
+      </section>
+      <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Billing address</h3>
+                    <div class="inputbox">
+                        <span>Full Name :</span>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="inputbox">
+                        <span>Email :</span>
+                        <input type="email" placeholder="example@example.com">
+                    </div>
+                    <div class="inputbox">
+                        <span>Address :</span>
+                        <input type="text" placeholder="doorno-street- locality">
+                    </div>
+                    <div class="inputbox">
+                        <span>City :</span>
+                        <input type="text" placeholder="city name">
+                    </div>
+                    
+                        <div class="inputbox">
+                            <span>State :</span>
+                            <input type="text" placeholder="state name">
+                        </div>
+                        <div class="inputbox">
+                            <span>Zip Code :</span>
+                            <input type="text" placeholder="123.456">
+                        </div>
+                    
+                </div>
+                <div class="col">
+                    <h3 class="title">Payment</h3>
+                    <div class="inputbox">
+                        <span>cards accepted :</span>
+                        <br>
+                        <img src="https://banner2.cleanpng.com/20180604/wby/kisspng-paypal-the-next-level-service-payment-gateway-indu-5b15b1478909c3.0798679915281482955613.jpg " alt=""  width="250" height="60">
+                    </div>
+                    <div class="inputbox">
+                        <span>Name on card :</span>
+                        <input type="text" placeholder="Enter your name on card">
+                    </div>
+                    <div class="inputbox">
+                        <span>Credit card no :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputbox">
+                        <span>Exp month :</span>
+                        <input type="text" placeholder="month name">
+                    </div>
+                    
+                    <div class="inputbox">
+                        <span>Exp year :</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="inputbox">
+                            <span>Cvv :</span>
+                            <input type="text" placeholder="1234">
+                        </div>
+                        
+                    
+                </div>
+            </div>
+            <input type="submit" value="proceed to pay" class="submit-btn">
+        </form>
+    
+    </div>
+
+
+
+      <footer class="section-p1">
+        <div class="col">
+          <img class="logo" src="img/1.png" alt="" width="120 " height="100">
+          <h4>Contact</h4>
+          <p><strong>Address:</strong> Arihanth Nivas,Gynedi street,Srikakulam,Andhra Pradesh,India</p>
+          <p><strong>Phone:</strong>(+91)7672028682</p>
+          <p><strong>Hours:</strong>5:00am-12:00am Mon-Sat</p>
+          <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-pinterest-p"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4>About</h4>
+          <a href="#">About us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact us</a>
+        </div>
+        <div class="col">
+          <h4>My Account</h4>
+          <a href="#">Sign in</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Wishlist</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Help</a>
+        </div> 
+        <div class="col install">
+          <h4>Install App</h4>
+          <p>From App Strore or Google Play</p>
+          <div class="row">
+            <img src="img/pay/app.png" alt="" width="200" height="60">&nbsp;&nbsp;
+            <img src="img/pay/play.png" alt="" width="200" height="60">
+          </div>
+          <p>Secured Payment Gateways</p>
+          <img src="img/pay/pay.png" alt="" width="400" height="60">
+        </div>
+      </footer>
+      <script>
+        var navbar = document.getElementById("navbar");
+  
+        navbar.style.maxHeight = "0px";
+  
+        function bartoggle(){
+          if(navbar.style.maxHeight == "0px")
+          {
+            navbar.style.maxHeight = "93vh";
+          }
+          else
+          {
+            navbar.style.maxHeight = "0px";
+  
+          }
+        }
+      </script>
+    </nav>
+    </body>
+    </html>
+    
